@@ -1,0 +1,342 @@
+// Variables
+$background-color: #F8F7F2;
+$primary-color: #3f4b8c;
+$secondary-color: #576EF2;
+$tertiary-color: #80A6F2;
+$accent-color: #BF8049;
+$default-padding: 5vh;
+$default-margin: 0px;
+$box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive-font($size) {
+  font-size: $size;
+}
+
+@mixin padding-horizontal($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin box {
+  box-sizing: border-box;
+}
+
+body {
+  margin: $default-margin;
+  font-family: 'Manrope', sans-serif;
+}
+
+header {
+  background-color: $background-color;
+  color: black;
+  text-align: center;
+  margin: $default-margin;
+  @include box;
+  @include flex-center;
+  justify-content: space-between;
+  height: auto;
+  @include padding-horizontal(11vh);
+  padding-top: $default-padding;
+}
+
+.headerButtons > button {
+  padding: 10px;
+  background-color: transparent;
+  border: 0px;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.principal {
+  width: 100%;
+  background-color: #333;
+}
+
+.section {
+  @include flex-center;
+  flex-wrap: wrap;
+  margin: $default-margin;
+}
+
+.container {
+  flex: 1 1 50%;
+  @include box;
+  height: 90vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  @include flex-center;
+  padding: 11vh;
+}
+
+.container-1 {
+  background-color: $background-color;
+  flex-direction: column;
+
+  h2 {
+    span {
+      display: block;
+      font-size: 50px;
+      padding: 5px;
+    }
+  }
+
+  h3 {
+    span {
+      display: block;
+      font-size: 24px;
+      padding: 3px;
+      color: #6d6d6d;
+    }
+  }
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+
+  div {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  div:first-child {
+    background-color: $primary-color;
+  }
+
+  div:nth-child(2) {
+    background-color: $secondary-color;
+  }
+
+  div:nth-child(3) {
+    background-color: $tertiary-color;
+  }
+
+  div:nth-child(4) {
+    background-color: $accent-color;
+  }
+}
+
+.container-2 {
+  background-color: $background-color;
+  padding: 5vh;
+
+  img {
+    width: 65%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+}
+
+.container-3 {
+  flex-direction: column;
+}
+
+.info > div {
+  margin: 2vh;
+  @include box;
+  background-color: $background-color;
+  width: 100%;
+  height: 15vh;
+  box-shadow: $box-shadow;
+  @include flex-center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5vh;
+  padding: 2vh;
+}
+
+.container-4 {
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+    padding: 5vh;
+    background-color: $background-color;
+    border-radius: 10%;
+  }
+}
+
+.estudiosInfo {
+  p {
+    font-size: larger;
+
+    span {
+      display: block;
+      margin: 2vh;
+    }
+  }
+}
+
+.imgEstudios {
+  flex-direction: row;
+
+  img {
+    width: 49%;
+    height: 21vh;
+    border-radius: 10%;
+    box-shadow: $box-shadow;
+  }
+}
+
+.container-5 {
+  background-color: $background-color;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h2 {
+    font-size: 45px;
+  }
+}
+
+.separation {
+  height: 1vh;
+  width: 5%;
+  background-color: black;
+  border-radius: 25%;
+}
+
+.servicesInfo {
+  display: flex;
+  gap: 3vh;
+
+  div {
+    span {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.container-6 {
+  background-color: $background-color;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 50%;
+  height: 20%;
+  background-color: transparent;
+  text-align: center;
+  padding: 5vh;
+  padding-top: 0;
+  padding-bottom: 10vh;
+
+  hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+  }
+}
+
+.tecContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  i {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: large;
+    font-weight: 700;
+  }
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades {
+  @include flex-center;
+  margin: 10px 0;
+
+  div {
+    padding: 10px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .fa-dumbbell {
+    background-color: $primary-color;
+  }
+
+  .fa-user-plus {
+    background-color: $secondary-color;
+  }
+
+  .fa-leanpub {
+    background-color: $primary-color;
+  }
+
+  .fa-brain {
+    background-color: $tertiary-color;
+  }
+
+  .fa-book-open-reader {
+    background-color: $accent-color;
+  }
+}
+
+footer > div {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+    @include responsive-font(90%);
+  }
+
+  h1 {
+    @include responsive-font(0em);
+  }
+
+  h2 {
+    @include responsive-font(1.6em);
+  }
+
+  h3 {
+    @include responsive-font(1.4em);
+  }
+
+  p, span {
+    @include responsive-font(0.9em);
+  }
+
+  .headerButtons > button {
+    font-size: large;
+  }
+
+  .card span {
+    font-size: 14px;
+  }
+}
