@@ -1,0 +1,80 @@
+{
+    "name": "Mateo Hernandez",
+    "sections": [
+      {
+        "sectionTitle": "Principal",
+        "content": {
+          "greeting": "Hola! soy Mateo,",
+          "profession": "Un ingeniero en software",
+          "description": "Me gusta crear Aplicaciones web y móviles",
+          "additionalInfo": "Encuentra más información sobre mí, así como mis habilidades o experiencia laboral. O simplemente mándame un email para saludar."
+        }
+      },
+      {
+        "sectionTitle": "Sobre Mi",
+        "content": {
+          "birthdate": "28 de Enero del 2003",
+          "age": 21,
+          "location": "Guadalajara Jalisco",
+          "education": {
+            "institution": "ITESO",
+            "semester": "6to semestre",
+            "degree": "Ingeniería en desarrollo de software"
+          }
+        }
+      },
+      {
+        "sectionTitle": "Mis estudios",
+        "content": {
+          "school": "Colegio Alemán De Guadalajara",
+          "languages": {
+            "German": "B2",
+            "English": "B2"
+          }
+        }
+      },
+      {
+        "sectionTitle": "Experiencia",
+        "content": {
+          "services": [
+            "Diseño Web",
+            "Frameworks",
+            "BackEnd"
+          ],
+          "skills": [
+            "Disciplinado",
+            "Trabajo en equipo",
+            "Actitud para aprender algo nuevo",
+            "Creatividad y pensamiento crítico",
+            "Liderazgo"
+          ],
+          "technologies": {
+            "WebDesign": ["Javascript", "HTML", "CSS"],
+            "Frameworks": ["React", "Node.js", "Angular"],
+            "BackEnd": ["Bases de datos", "AWS", "Google Cloud"]
+          }
+        }
+      },
+      {
+        "sectionTitle": "Mis pasatiempos",
+        "content": {
+          "hobbies": [
+            "Escuchar y descubrir música",
+            "Tocar guitarra",
+            "Tocar piano",
+            "Fútbol",
+            "Hacer deporte",
+            "Gimnasio"
+          ],
+          "sports": ["Fútbol", "Tenis"]
+        }
+      },
+      {
+        "sectionTitle": "Contacto",
+        "content": {
+          "email": "mateo.hernandez@iteso.mx"
+        }
+      }
+    ]
+  }
+  

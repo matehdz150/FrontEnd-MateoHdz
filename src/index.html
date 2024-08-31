@@ -7,13 +7,13 @@
     <title>Página Responsiva</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.min.css" />
 </head>
 
 <body>
 
     <header>
-        <h2>Mateo Hernandez</h2>
+        <h2 id="nombre"></h2>
         <div class="headerButtons">
             <button>Sobre Mi</button>
             <button>Experiencia</button>
@@ -26,15 +26,13 @@
         <section class="section">
             <div class="container container-1">
                 <h2>
-                    <span>Hola! soy Mateo,</span>
-                    <span>Un ingeniero en software</span>
-                    <span>Me gusta crear </span>
-                    <span>Aplicaciones web y móviles</span>
+                    <span id="pSpan1"></span>
+                    <span id="pSpan2"></span>
+                    <span id="pSpan3"></span>
                 </h2>
                 <h3>
-                    <span>Encuentra mas informacion sobre mi, asi como mis</span>
-                    <span>habilidades o experiencia laboral. O simplemente </span>
-                    <span>mandame un email para saludar</span>
+                    <span id="pAddInfo"></span>
+
                 </h3>
                 <div class="colors">
                     <div class="color"></div>
@@ -44,7 +42,7 @@
                 </div>
             </div>
             <div class="container container-2">
-                <img src="../assets/Yo.jpeg" alt="foto" />
+                <img src="./assets/Yo.jpeg" alt="foto" />
             </div>
         </section>
     </section>
@@ -57,39 +55,39 @@
                             <i class="fa-solid fa-cake-candles"
                                 style="font-size: larger; padding: 15px; background-color: #3f4b8c; color: white; border-radius: 50%;"></i>
                         </div>
-                        <h3>Naci el 28 de Enero del 2003, tengo 21 años</h3>
+                        <h3 id="sNacimiento"></h3>
                     </div>
                     <div>
                         <div>
                             <i class="fa-solid fa-location-dot"
                                 style="font-size: larger; padding: 15px; background-color: #576EF2; color: white; border-radius: 50%;"></i>
                         </div>
-                        <h3>Vivo en Guadalajara Jalisco</h3>
+                        <h3 id="sLocation"></h3>
                     </div>
                     <div>
                         <div>
                             <i class="fa-solid fa-graduation-cap"
                                 style="font-size: larger; padding: 15px; background-color: #80A6F2; color: white; border-radius: 50%;"></i>
                         </div>
-                        <h3>Estudio en el ITESO, voy en 6to semestre</h3>
+                        <h3 id="sEducation"></h3>
                     </div>
                     <div>
                         <div>
                             <i class="fa-brands fa-uncharted"
                                 style="font-size: larger; padding: 15px; background-color: #BF8049; color: white; border-radius: 50%;"></i>
                         </div>
-                        <h3>Estoy estudiando ingenieria en desarrollo de software</h3>
+                        <h3 id="sEducation2"></h3>
                     </div>
                 </div>
             </div>
             <div class="container container-4">
-                <h2>Mis estudios</h2>
+                <h2 id="estudiosTitle"></h2>
                 <div class="estudiosInfo">
                     <p class="p">
                         <span>
                             Desde KinderGarten hasta la preparatoria estudie en el
                         </span>
-                        <span style="font-size: larger; font-weight: 700;">
+                        <span style="font-size: larger; font-weight: 700;" id="colegio">
                             Colegio Aleman De Guadalajara
                         </span>
                         <span>
@@ -133,7 +131,7 @@
                             En algo relacionado al software
                         </span>
                         <div>
-                            <span style="margin-top: 5px; font-size: 16px; font-weight: 600;">
+                            <span style="margin-top: 5px; font-size: 16px; font-weight: 600;" id="skill1">
                                 Mis habilidades
                             </span>
                             <div>
@@ -141,7 +139,7 @@
                                     <div style="padding: 10px; background-color: #3f4b8c; border-radius: 50%;">
                                         <i class="fa-solid fa-dumbbell" style="color: white;"></i>
                                     </div>
-                                    <span>Soy disciplinado</span>
+                                    <span id="skill2">Soy disciplinado</span>
 
                                 </div>
                             </div>
@@ -150,7 +148,7 @@
                                     <div style="padding: 10px; background-color: #576EF2; border-radius: 50%;">
                                         <i class="fa-solid fa-user-plus" style="color: white;"></i>
                                     </div>
-                                    <span>Se trabajar en equipo</span>
+                                    <span id="skill3">Se trabajar en equipo</span>
 
                                 </div>
                             </div>
@@ -159,7 +157,7 @@
                                     <div style="padding: 10px; background-color: #3f4b8c; border-radius: 50%;">
                                         <i class="fa-brands fa-leanpub" style="color: white;"></i>
                                     </div>
-                                    <span>Siempre tengo actitud para aprender algo nuevo</span>
+                                    <span id="skill4">Siempre tengo actitud para aprender algo nuevo</span>
                                 </div>
                             </div>
                             <div>
@@ -167,7 +165,7 @@
                                     <div style="padding: 10px; background-color: #80A6F2; border-radius: 50%;">
                                         <i class="fa-solid fa-brain"></i>
                                     </div>
-                                    <span>Soy muy creativo y tengo pensamiento critico</span>
+                                    <span id="skill5">Soy muy creativo y tengo pensamiento critico</span>
                                 </div>
                             </div>
                             <div>
@@ -175,7 +173,7 @@
                                         <div style="padding: 10px; background-color: #BF8049; border-radius: 50%;">
                                             <i class="fa-solid fa-book-open-reader"></i>
                                         </div>
-                                    <span>Soy un lider</span>
+                                    <span id="skill6">Soy un lider</span>
                                 </div>
                             </div>
                         </div>
@@ -188,15 +186,15 @@
                     <hr>
                     <div class="tecContainer">
                         <div class="tecnologias">
-                            <p>Javascript</p>
+                            <p id="tec1"></p>
                             <i class="fa-brands fa-js"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>html</p>
+                            <p id="tec2"></p>
                             <i class="fa-brands fa-html5"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>CSS</p>
+                            <p id="tec3"></p>
                             <i class="fa-brands fa-css3-alt"></i>
                         </div>
                     </div>
@@ -206,15 +204,15 @@
                     <hr>
                     <div class="tecContainer">
                         <div class="tecnologias">
-                            <p>React </p>
+                            <p id="tec4"></p>
                             <i class="fa-brands fa-react"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>Node.js</p>
+                            <p id="tec5"></p>
                             <i class="fa-brands fa-node-js"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>Angular</p>
+                            <p id="tec6"></p>
                             <i class="fa-brands fa-angular"></i>
                         </div>
                     </div>
@@ -224,15 +222,15 @@
                     <hr>
                     <div class="tecContainer">
                         <div class="tecnologias">
-                            <p>Bases de datos </p>
+                            <p id="tec7"></p>
                             <i class="fa-solid fa-database"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>AWS</p>
+                            <p id="tec8"></p>
                             <i class="fa-brands fa-aws"></i>
                         </div>
                         <div class="tecnologias">
-                            <p>Google Cloud</p>
+                            <p id="tec9"></p>
                             <i class="fa-brands fa-google"></i>
                         </div>
                     </div>
@@ -248,33 +246,33 @@
                         <i class="fa-solid fa-record-vinyl"
                             style="font-size: larger; padding: 15px; background-color: #3f4b8c; color: white; border-radius: 50%;"></i>
                     </div>
-                    <h3>Me gusta mucho escuchar y descubrir musica</h3>
+                    <h3 id="hobby1"></h3>
                 </div>
                 <div>
                     <div>
                         <i class="fa-solid fa-guitar"
                             style="font-size: larger; padding: 15px; background-color: #576EF2; color: white; border-radius: 50%;"></i>
                     </div>
-                    <h3>Toco guitarra desde hace mas de 5 años</h3>
+                    <h3 id="hobby2"></h3>
                 </div>
                 <div>
                     <div>
                         <i class="fa-solid fa-sliders"
                             style="font-size: larger; padding: 15px; background-color: #80A6F2; color: white; border-radius: 50%;"></i>
                     </div>
-                    <h3>Toco piano desde hace 3 años</h3>
+                    <h3 id="hobby3"></h3>
                 </div>
                 <div>
                     <div>
                         <i class="fa-solid fa-futbol"
                             style="font-size: larger; padding: 15px; background-color: #BF8049; color: white; border-radius: 50%;"></i>
                     </div>
-                    <h3>Me gusta mucho el futbol</h3>
+                    <h3 id="hobby4"></h3>
                 </div>
             </div>
         </div>
         <div class="container container-4">
-            <h2>Mis pasatiempos</h2>
+            <h2 id="pasatiemposTitle"></h2>
             <div class="estudiosInfo">
                 <p class="p">
                     <span>
@@ -306,11 +304,24 @@
     <footer>
         <div>
             <h2>Informacion de contacto</h2>
-            <h3>mateo.hernandez@iteso.mx</h3>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </footer>
 
 
 </body>
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="./scripts/main.js" type="module"></script>
 </html>

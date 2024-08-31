@@ -1,6 +1,4 @@
 # FrontEnd-MateoHdz
 
-Hacer npm i, para instalar sass
-npm run styles para compilar los estilos
-
-No puse experiencia laboral porque todavia no he trabajado en ningun lado relacionado a mi carrera
+Hacer npm i, para instalar las dependencias
+hacer npm run build para hacer un build de los scripts, assets y styles
