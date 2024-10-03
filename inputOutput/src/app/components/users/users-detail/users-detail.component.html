@@ -1,0 +1,12 @@
+<div *ngIf="selectedUser">
+    <h2>Detalles del Usuario</h2>
+    <p><strong>ID:</strong> {{ selectedUser.id }}</p>
+    <p><strong>Username:</strong> {{ selectedUser.username }}</p>
+    <p><strong>Email:</strong> {{ selectedUser.email }}</p>
+    <p><strong>Phone:</strong> {{ selectedUser.phone }}</p>
+  </div>
+  
+  <!-- Mostrar un mensaje cuando no hay un usuario seleccionado -->
+  <div *ngIf="!selectedUser">
+    <p>Selecciona un usuario para ver los detalles.</p>
+  </div>
