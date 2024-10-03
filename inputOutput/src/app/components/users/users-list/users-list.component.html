@@ -1,0 +1,7 @@
+<ul>
+    @for (user of users; track $index) {
+        <li (click)="selectUser(user)" [ngClass]="{'active': isActive(user)}">
+            {{user.username}}
+        </li>
+    }
+</ul>
